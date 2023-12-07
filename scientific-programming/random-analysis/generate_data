@@ -1,0 +1,8 @@
+from random import gauss, uniform 
+
+low, high = 0.0, 20.0 
+
+mu, sigma = 10.0, 2.5 
+
+for time in range(10000):
+    print(time/100.0, uniform(low, high), gauss(mu,sigma))

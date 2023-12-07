@@ -1,0 +1,14 @@
+from sys import stdin 
+
+lines = []
+for line in stdin:
+    # remove trailing "\n" and split by whitespace
+    line = line.strip().split()
+    # convert each field to float
+    line = list(map(float, line))
+    # store line in list
+    lines.append(line)
+
+# display each item in lines
+for line in lines:
+    print(line)
